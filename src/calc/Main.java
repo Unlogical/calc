@@ -20,6 +20,9 @@ public class Main {
         }
         File[] files = directory.listFiles();
         for(File file : files){
+            if(file.getName().matches("in_\\d+")){
+                work(file);
+            }
 
         }
     }
